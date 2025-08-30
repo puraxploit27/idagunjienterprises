@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idagunji Enterprises</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<!-- WhatsApp Floating Button with Subtle Background (Smaller) -->
+<a href="https://wa.me/7829773185" target="_blank" aria-label="Chat on WhatsApp"
+   class="fixed bottom-6 right-6 p-4 rounded-full shadow-xl transform hover:scale-110 transition duration-300 z-50 flex items-center justify-center bg-white/20 backdrop-blur-md">
+   <img src="bro.png" alt="WhatsApp Logo" class="w-8 h-8">
+</a>
+
+<body class="[#DCFFDB] text-gray-900">
+
+    <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4 py-2 h-24">
+      <div class="flex items-center space-x-3 whitespace-nowrap">
+        <img src="logo.png" alt="Logo" class="h-16 w-auto object-contain">
+        <span class="text-2xl md:text-2xl font-bold tracking-wide text-gray-900">
+          Idagunji <span class="text-teal-600">Enterprises</span>
+        </span>
+      </div>
+      <nav class="hidden md:flex w-full justify-end text-gray-800 font-medium px-8 text-lg">
+        <div class="flex items-center space-x-8">
+          <a href="index.html" class="hover:text-teal-600 transition">Home</a>
+          <div class="relative group">
+            <button class="flex items-center hover:text-teal-600 transition">
+              About
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all duration-200 invisible group-hover:visible">
+                <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">Our Story</a>
+                <a href="team.html" class="block px-4 py-2 hover:bg-gray-100">Team</a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button class="flex items-center hover:text-teal-600 transition">
+              Services
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all duration-200 invisible group-hover:visible">
+              <a href="services.html" class="block px-4 py-2 hover:bg-gray-100">Consulting</a>
+              <a href="support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+            </div>
+          </div>
+          <a href="gallery.html" class="hover:text-teal-600 transition">Gallery</a>
+          <a href="contact.html" class="hover:text-teal-600 transition">Contact</a>
+        </div>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-3xl text-gray-800 focus:outline-none">☰</button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-amber-50 px-6 pb-4 space-y-2 text-gray-800 font-semibold">
+      <a href="index.html" class="block hover:text-gray-600">Home</a>
+      <details>
+        <summary class="cursor-pointer hover:text-gray-600">About</summary>
+        <div class="pl-4 space-y-1">
+          <a href="about.html" class="block hover:text-gray-600">Our Story</a>
+          <a href="team.html" class="block hover:text-gray-600">Team</a>
+        </div>
+      </details>
+      <details>
+        <summary class="cursor-pointer hover:text-gray-600">Services</summary>
+        <div class="pl-4 space-y-1">
+          <a href="services.html" class="block hover:text-gray-600">Consulting</a>
+          <a href="support.html" class="block hover:text-gray-600">Support</a>
+        </div>
+      </details>
+      <a href="gallery.html" class="block hover:text-gray-600">Gallery</a>
+      <a href="contact.html" class="block hover:text-gray-600">Contact</a>
+    </div>
+  </header>
+  <!-- Hero Section -->
+<section class="relative text-center py-32 bg-gray-900">
+  <!-- Background Image -->
+<div class="absolute inset-0">
+  <img src="bg-1.jpg" alt="Hero Background" class="w-full h-full object-cover">
+  <!-- Darker / Duller Overlay -->
+  <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+</div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-3xl mx-auto px-6">
+   <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight text-center md:text-left">
+  <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight text-center">
+  <span class="whitespace-nowrap">Building Excellence with</span><br>
+  <span class="text-teal-400">Idagunji Enterprises</span>
+</h1>
+
+</h1>
+    <p class="mt-4 text-lg md:text-xl text-gray-200">
+      Trusted partner for Aluminum Works, Structural Glazing, Canopies, and Modern Architectural Solutions.
+    </p>
+    <div class="mt-6">
+      <a href="services.html" 
+         class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md transition">
+        Explore Services
+      </a>
+      <a href="contact.html" 
+         class="ml-4 bg-white text-teal-600 hover:bg-gray-100 px-6 py-3 rounded-lg shadow-md transition">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="bg-white py-16 px-6">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Aluminum & uPVC -->
+      <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+                  transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+        <div class="text-5xl mb-4 text-teal-600">🚪</div>
+        <h3 class="text-xl font-semibold mb-2">Aluminum & uPVC Doors & Windows</h3>
+        <p class="text-gray-600 mb-4">
+          Durable, stylish, and weather-resistant aluminum and uPVC doors & windows 
+          designed for modern homes and offices.
+        </p>
+        <a href="contact.html" 
+           class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+                  hover:bg-teal-700 transition">
+          Learn More
+        </a>
+      </div>
+<!-- ACP Works -->
+<div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+            transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+  <div class="text-5xl mb-4 text-teal-600">🏢</div>
+  <h3 class="text-xl font-semibold mb-2">ACP Works</h3>
+  <p class="text-gray-600 mb-4">
+    High-quality Aluminum Composite Panel (ACP) installations for modern facades, cladding, and exterior designs.
+  </p>
+  <a href="contact.html" 
+     class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+            hover:bg-teal-700 transition">
+    Learn More
+  </a>
+</div>
+
+<!-- Interior Glass Partitions -->
+<div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+            transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+  <div class="text-5xl mb-4 text-teal-600">🪟</div>
+  <h3 class="text-xl font-semibold mb-2">Interior Glass Partitions</h3>
+  <p class="text-gray-600 mb-4">
+    Stylish and durable glass partitions to create elegant office spaces while maintaining transparency and light.
+  </p>
+  <a href="contact.html" 
+     class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+            hover:bg-teal-700 transition">
+    Learn More
+  </a>
+</div>
+<!-- Facade Renovation & Maintenance -->
+<div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+            transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+  <div class="text-5xl mb-4 text-teal-600">🔨</div>
+  <h3 class="text-xl font-semibold mb-2">Facade Renovation & Maintenance</h3>
+  <p class="text-gray-600 mb-4">
+    Keep building exteriors looking new with expert façade cleaning, repair, and restoration services.
+  </p>
+  <a href="contact.html" 
+     class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+            hover:bg-teal-700 transition">
+    Learn More
+  </a>
+</div>
+
+      <!-- Domal Windows & False Ceiling -->
+      <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+                  transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+        <div class="text-5xl mb-4 text-teal-600">🏠</div>
+        <h3 class="text-xl font-semibold mb-2">Domal Windows & False Ceiling Works</h3>
+        <p class="text-gray-600 mb-4">
+          Premium domal window systems and elegant false ceiling installations 
+          that enhance both aesthetics and functionality.
+        </p>
+        <a href="contact.html" 
+           class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+                  hover:bg-teal-700 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Structural & Spider Glazing -->
+      <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+                  transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+        <div class="text-5xl mb-4 text-teal-600">🏢</div>
+        <h3 class="text-xl font-semibold mb-2">Structural & Spider Glazing</h3>
+        <p class="text-gray-600 mb-4">
+          Innovative glass façade solutions including spider glazing 
+          for sleek, strong, and contemporary building exteriors.
+        </p>
+        <a href="contact.html" 
+           class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+                  hover:bg-teal-700 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Canopies & Ventilations -->
+      <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+                  transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+        <div class="text-5xl mb-4 text-teal-600">🌦️</div>
+        <h3 class="text-xl font-semibold mb-2">Canopies & Ventilations</h3>
+        <p class="text-gray-600 mb-4">
+          Custom-designed canopies and ventilation systems that ensure 
+          comfort, durability, and modern architectural appeal.
+        </p>
+        <a href="contact.html" 
+           class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+                  hover:bg-teal-700 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Shower Cubicles -->
+      <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+                  transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+        <div class="text-5xl mb-4 text-teal-600">🚿</div>
+        <h3 class="text-xl font-semibold mb-2">Shower Cubicles</h3>
+        <p class="text-gray-600 mb-4">
+          Stylish, space-saving, and water-tight shower cubicles 
+          tailored to fit your bathroom with elegance.
+        </p>
+        <a href="contact.html" 
+           class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+                  hover:bg-teal-700 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Glass Railings -->
+      <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 text-center 
+                  transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#F0FFF4]">
+        <div class="text-5xl mb-4 text-teal-600">🪟</div>
+        <h3 class="text-xl font-semibold mb-2">Glass Railings & More</h3>
+        <p class="text-gray-600 mb-4">
+          High-quality glass railings, window solutions, and 
+          customized glass works to suit diverse architectural needs.
+        </p>
+        <a href="contact.html" 
+           class="inline-block bg-teal-600 text-white px-4 py-2 rounded-lg 
+                  hover:bg-teal-700 transition">
+          Learn More
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Customer Satisfaction Stats Section with Animation -->
+<section id="customer-stats" class="bg-white py-16 px-6">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Customer Satisfaction</h2>
+    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+      We take pride in delivering top-notch services and products. Here’s how our customers rate us across key aspects of our work.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Product Quality -->
+      <div class="text-center">
+        <div class="text-5xl mb-4 text-teal-600">🏆</div>
+        <h3 class="text-xl font-semibold mb-2">Product Quality</h3>
+        <p class="text-gray-500 mb-4">High-quality materials and craftsmanship ensure long-lasting results.</p>
+        <div class="w-full bg-gray-200 rounded-full h-6 mb-2 overflow-hidden">
+          <div class="bg-teal-600 h-6 rounded-full progress-bar" data-width="95%"></div>
+        </div>
+        <span class="text-gray-600 font-medium">95% Satisfied</span>
+      </div>
+
+      <!-- On-time Delivery -->
+      <div class="text-center">
+        <div class="text-5xl mb-4 text-teal-600">⏱️</div>
+        <h3 class="text-xl font-semibold mb-2">On-time Delivery</h3>
+        <p class="text-gray-500 mb-4">We ensure projects are completed as scheduled.</p>
+        <div class="w-full bg-gray-200 rounded-full h-6 mb-2 overflow-hidden">
+          <div class="bg-teal-600 h-6 rounded-full progress-bar" data-width="90%"></div>
+        </div>
+        <span class="text-gray-600 font-medium">90% Timely</span>
+      </div>
+
+      <!-- Customer Support -->
+      <div class="text-center">
+        <div class="text-5xl mb-4 text-teal-600">🤝</div>
+        <h3 class="text-xl font-semibold mb-2">Customer Support</h3>
+        <p class="text-gray-500 mb-4">Friendly, responsive support team to assist you at every step.</p>
+        <div class="w-full bg-gray-200 rounded-full h-6 mb-2 overflow-hidden">
+          <div class="bg-teal-600 h-6 rounded-full progress-bar" data-width="92%"></div>
+        </div>
+        <span class="text-gray-600 font-medium">92% Happy</span>
+      </div>
+
+    </div>
+
+    <!-- Additional Metrics -->
+    <div class="grid md:grid-cols-3 gap-10 mt-12">
+
+      <!-- Repeat Customers -->
+      <div class="text-center">
+        <div class="text-5xl mb-4 text-teal-600">🔁</div>
+        <h3 class="text-xl font-semibold mb-2">Repeat Customers</h3>
+        <p class="text-gray-500 mb-4">Many clients return for multiple projects.</p>
+        <div class="w-full bg-gray-200 rounded-full h-6 mb-2 overflow-hidden">
+          <div class="bg-teal-600 h-6 rounded-full progress-bar" data-width="88%"></div>
+        </div>
+        <span class="text-gray-600 font-medium">88% Return Rate</span>
+      </div>
+
+      <!-- Recommendation Rate -->
+      <div class="text-center">
+        <div class="text-5xl mb-4 text-teal-600">💬</div>
+        <h3 class="text-xl font-semibold mb-2">Recommendation Rate</h3>
+        <p class="text-gray-500 mb-4">Our clients often recommend us to others.</p>
+        <div class="w-full bg-gray-200 rounded-full h-6 mb-2 overflow-hidden">
+          <div class="bg-teal-600 h-6 rounded-full progress-bar" data-width="93%"></div>
+        </div>
+        <span class="text-gray-600 font-medium">93% Recommend</span>
+      </div>
+
+      <!-- Overall Satisfaction -->
+      <div class="text-center">
+        <div class="text-5xl mb-4 text-teal-600">⭐</div>
+        <h3 class="text-xl font-semibold mb-2">Overall Satisfaction</h3>
+        <p class="text-gray-500 mb-4">We strive to deliver excellence in every project.</p>
+        <div class="w-full bg-gray-200 rounded-full h-6 mb-2 overflow-hidden">
+          <div class="bg-teal-600 h-6 rounded-full progress-bar" data-width="94%"></div>
+        </div>
+        <span class="text-gray-600 font-medium">94% Happy Clients</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <!-- Company Info -->
+    <div>
+      <h2 class="text-2xl font-bold text-white mb-4">Idagunji Enterprises</h2>
+      <p class="text-gray-400 leading-relaxed">
+        Excellence in aluminum works, structural glazing, and architectural solutions.
+        We combine innovation, precision, and trust to deliver outstanding results.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-400 transition">About Us</a></li>
+        <li><a href="services.html" class="hover:text-green-400 transition">Services</a></li>
+        <li><a href="gallery.html" class="hover:text-green-400 transition">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Our Services</h3>
+      <ul class="space-y-2">
+        <li><span class="hover:text-green-400 transition">Aluminum & uPVC Works</span></li>
+        <li><span class="hover:text-green-400 transition">Structural & Spider Glazing</span></li>
+        <li><span class="hover:text-green-400 transition">Glass Railings & Shower Cubicles</span></li>
+        <li><span class="hover:text-green-400 transition">False Ceilings & Canopies</span></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+      <ul class="space-y-2">
+        <li>📍 Bangalore, Karnataka</li>
+        <li>📞 +91 7829 773185</li>
+        <li>✉️ umesh6819@gmail.com</li>
+      </ul>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="hover:text-green-400"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-green-400"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-gray-700 py-4 text-center text-gray-500 text-sm">
+    <p>&copy; 2025 Idagunji Enterprises. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <!-- Script for mobile toggle -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+<!-- Add this script at the bottom of your HTML -->
+<script>
+  // Animate progress bars when section is in view
+  function animateProgressBars() {
+    const bars = document.querySelectorAll('.progress-bar');
+    bars.forEach(bar => {
+      const width = bar.getAttribute('data-width');
+      bar.style.width = '0';
+      setTimeout(() => {
+        bar.style.transition = 'width 2s ease-in-out';
+        bar.style.width = width;
+      }, 100); // small delay for smooth start
+    });
+  }
+
+  // Check if section is in viewport
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+    );
+  }
+
+  const statsSection = document.getElementById('customer-stats');
+
+  function checkScroll() {
+    if (isInViewport(statsSection)) {
+      animateProgressBars();
+      window.removeEventListener('scroll', checkScroll); // animate only once
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  window.addEventListener('load', checkScroll);
+</script>
+</body>
+</html>
